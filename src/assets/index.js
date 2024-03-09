@@ -20,15 +20,28 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import sql from "./tech/sql.png";
+import webRTC from "./tech/webRTC.png";
+import python from "./tech/python.png";
+import googlecloud from "./tech/google-cloud.png";
+import cplusplus from "./tech/cplusplus.png";
+import opencv from "./tech/openCV.png";
+
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import hiringtek from "./company/hiringtek.png"
+import vijaydeep from "./company/vijaydeep.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import ssca from "./ssca.png";
+import airmouse from "./airmouse.png";
+import yogai from "./yogai.png";
+import grime from "./grime.png";
+import graph from "./graph.png";
+import webRTCproject from "./webRTC.png"
 
 export {
   logo,
@@ -56,7 +69,18 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  hiringtek,
+  vijaydeep,
+  sql,
+  webRTC,
+  python,
+  opencv,
+  cplusplus,
+  googlecloud,
+  ssca,
+  yogai,
+  airmouse,
+  grime,
+  graph,
+  webRTCproject
 };

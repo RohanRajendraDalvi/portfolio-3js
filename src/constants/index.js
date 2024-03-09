@@ -1,265 +1,318 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-  } from "../assets";
+  mobile,
+  backend,
+  creator,
+  web,
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
+  meta,
+  starbucks,
+  tesla,
+  shopify,
+  hiringtek,
+  vijaydeep,
+  yogai,
+  airmouse,
+  ssca,
+  grime,
+  threejs,
+  sql,
+  webRTC,
+  python,
+  opencv,
+  cplusplus,
+  googlecloud,
+  graph,
+  webRTCproject
+
+} from "../assets";
+
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
+const services = [
+  {
+    title: "Full stack Web Developer React/Angular",
+    icon: web,
+  },
+  {
+    title: "Web-RTC engineer Peer.js Socket.io",
+    icon: mobile,
+  },
+  {
+    title: "Java MVC developer",
+    icon: backend,
+  },
+  {
+    title: "SQL/noSQL database expert",
+    icon: creator,
+  },
+];
+
+const technologies = [
   
-   const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "work",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "C++",
+    icon: cplusplus,
+  },
+  {
+    name: "openCV",
+    icon: opencv,
+  },
+  {
+    name: "webRTC",
+    icon: webRTC,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Google Cloud",
+    icon: googlecloud,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+
+];
+
+const experiences = [
+  {
+    title: "WebRTC engineer",
+    company_name: "HiringTek",
+    icon: hiringtek,
+    iconBg: "#E6DEDD",
+    date: "February 2022 to April 2023",
+    points: [
+      "Created a multi-peered prototype using socket.io and peer.js enabling up to 700 Parallel Proctored Interviews.",
+      "Integrated the system with the safe-exam-browser using Javascript to secure the environment during the interview.",
+      "Facilitated online interviews using WebRTC and cut down the time spent during the hiring process by 95%.",
+      "Improved the UI of the website using AngularJS and TypeScript and fixed over 50 frontend related bugs.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    company_name: "Vijaydeep Agencies",
+    icon: vijaydeep,
+    iconBg: "#E6DEDD",
+    date: "December 2021 - May 2022",
+    points: [
+      "Developed a dynamic, user-friendly, and responsive front-end using bootstrap-5 for the Company Website.",
+      "Built a third normal form database design, using SQL & phpMyAdmin for the website’s product and news pages.",
+      "Established an internal email service using Google AppScript and Namecheap email service for firm employees.",
+      "Developed an automated contact reply service using Google AppScript and javascript for the contact us page.",
+      "Enhanced the company's online visibility in the surgical equipment market and improved SEO score by over 80%.",
+    ],
+  },
   
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
-  ];
-  
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
-  ];
-  
-  const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
-  const projects = [
-    {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
-  ];
-  
-  export {navLinks, services, technologies, experiences, testimonials, projects };
+];
+
+const testimonials = [
+  {
+    testimonial:
+      "He has a deep passion for technology, and I can vouch for him as a valuable asset to any organization.",
+    name: "Pradeep Haldankar",
+    designation: "Director",
+    company: "Vijaydeep Agencies",
+    image: "./src/assets/testimonials/pradeep.jpeg",
+  },
+  {
+    testimonial:
+      "He astonishes me by digging deep into understanding the fundamental ideas.",
+    name: "Dr. Vidyadhari Singh",
+    designation: "Head of Department Cyber-Security",
+    company: "University of Mumbai",
+    image: "./src/assets/testimonials/drSingh.jpeg",
+  },
+  {
+    testimonial:
+      "Rohan is a quick learner who can quickly comprehend information and keep it for a long time.",
+    name: "Dr. Megharani Patil",
+    designation: "Head of Department AI/ML",
+    company: "University of Mumbai",
+    image: "./src/assets/testimonials/drPatil.jpeg",
+  },
+];
+
+const projects = [
+  {
+    name: "Airmouse",
+    description:
+      "Utilized Python’s OpenCV to develop an initial version, using 3 colored finger tracking for gesture recognition.       Transitioned to TensorFlowJS for the subsequent version,to enhance gesture recognition accuracy and flexibility.      Built a web application using JavaScript providing a friendly UI to the user for defining over 50 hand gestures",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "openCV",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML,CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: airmouse,
+    source_code_link: "https://airmouse1-0.onrender.com",
+  },
+  {
+    name: "Yoga Ai",
+    description:
+      "Enhanced yoga experience through automated feedback and visual aid on posture improvements for 5 yoga poses.Developed Yoga AI using TensorFlowJS & camera data analysis to accurately classify yoga poses on browsers.",
+    tags: [
+      {
+        name: "tensorFlowJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "BootStrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: yogai,
+    source_code_link: "https://yogai.onrender.com/",
+  },
+  {
+    name: "Super Secure Chat Application",
+    description:
+      "Hosted and Developed a triple Encrypted Chat Application using Sockets.io, PeerJS, JavasScript and Bootstrap. Implemented Mixed Cypher for end to end encryption and  OTP security System for login into chat room.",
+    tags: [
+      {
+        name: "PeerJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ssca,
+    source_code_link: "https://super-safe-chat-app.onrender.com",
+  },
+  {
+    name: "Graphical Image Manipulation and Enhancement App",
+    description:
+      "Built a Java application with GUI in JSwing that performs 18 image processing features for GRIME, including channel visualization, blurring, image compression, flipping, color enhancement, sharpening, color correction etc.  Provided Histogram Visualization and real time rollback facilities improving usability and helping user experience.",
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MVC",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JSwing",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: grime,
+    source_code_link: "https://github.com/RohanRajendraDalvi/GRIME",
+  },
+  {
+    name: "WebRTC prototype",
+    description:
+      "Sure, leveraging technologies such as WebRTC, Peer.js, and Socket.io, I've successfully crafted a robust prototype for webRTC applications. This solution enables seamless real-time communication, facilitating peer-to-peer connections for audio, video, and data sharing. With Peer.js, I've streamlined the process of establishing peer connections, while Socket.io ensures efficient signaling and messaging between peers. This prototype lays a strong foundation for scalable, interactive webRTC applications, empowering users with immersive communication experiences across various platforms and devices.",
+    tags: [
+      {
+        name: "peer.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: webRTCproject,
+    source_code_link: "https://webrtc-prototype.onrender.com/",
+  },
+  {
+    name: "Social media recommendation algorithm",
+    description:
+      "I've created a JavaScript application demonstrating Jaccard similarity and cosine similarity for social media recommendations. Users input their interests, and the app compares them with others' data using these algorithms to provide personalized recommendations, making content more relevant and engaging.",
+    tags: [
+      {
+        name: "Javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: graph,
+    source_code_link: "https://graph-similarity.onrender.com",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects };
