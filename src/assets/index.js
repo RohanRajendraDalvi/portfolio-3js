@@ -43,6 +43,10 @@ import grime from "./grime.png";
 import graph from "./graph.png";
 import webRTCproject from "./webRTC.png"
 
+import drPatil from "./testimonials/drPatil.jpeg"
+import drSingh from "./testimonials/drSingh.jpeg"
+import pradeep from "./testimonials/pradeep.jpeg"
+
 export {
   logo,
   backend,
@@ -82,5 +86,8 @@ export {
   airmouse,
   grime,
   graph,
-  webRTCproject
+  webRTCproject,
+  drPatil,
+  drSingh,
+  pradeep,
 };

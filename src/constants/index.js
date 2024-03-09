@@ -33,7 +33,10 @@ import {
   cplusplus,
   googlecloud,
   graph,
-  webRTCproject
+  webRTCproject,
+  drSingh,
+  drPatil,
+  pradeep
 
 } from "../assets";
 
@@ -166,7 +169,7 @@ const testimonials = [
     name: "Pradeep Haldankar",
     designation: "Director",
     company: "Vijaydeep Agencies",
-    image: "./src/assets/testimonials/pradeep.jpeg",
+    image: pradeep,
   },
   {
     testimonial:
@@ -174,7 +177,7 @@ const testimonials = [
     name: "Dr. Vidyadhari Singh",
     designation: "Head of Department Cyber-Security",
     company: "University of Mumbai",
-    image: "./src/assets/testimonials/drSingh.jpeg",
+    image: drSingh,
   },
   {
     testimonial:
@@ -182,7 +185,7 @@ const testimonials = [
     name: "Dr. Megharani Patil",
     designation: "Head of Department AI/ML",
     company: "University of Mumbai",
-    image: "./src/assets/testimonials/drPatil.jpeg",
+    image: drPatil,
   },
 ];
 
