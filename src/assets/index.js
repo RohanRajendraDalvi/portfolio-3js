@@ -8,17 +8,13 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import sql from "./tech/sql.png";
 import webRTC from "./tech/webRTC.png";
@@ -29,12 +25,11 @@ import opencv from "./tech/openCV.png";
 
 
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+// Removed unused company logos: meta, shopify, starbucks, tesla
 import hiringtek from "./company/hiringtek.png"
 import vijaydeep from "./company/vijaydeep.png"
+import northeastern from "./company/northeastern.png"
+import xander from "./company/xander.png"
 
 import ssca from "./ssca.png";
 import airmouse from "./airmouse.png";
@@ -57,24 +52,21 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
   git,
   html,
   javascript,
   mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
-  typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  
   hiringtek,
   vijaydeep,
+  northeastern,
+  xander,
+
+
   sql,
   webRTC,
   python,
@@ -90,4 +82,5 @@ export {
   drPatil,
   drSingh,
   pradeep,
+  
 };

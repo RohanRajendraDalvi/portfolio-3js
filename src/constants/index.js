@@ -4,23 +4,14 @@ import {
   creator,
   web,
   javascript,
-  typescript,
-  html,
-  css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   hiringtek,
   vijaydeep,
+  northeastern,
   yogai,
   airmouse,
   ssca,
@@ -36,8 +27,8 @@ import {
   webRTCproject,
   drSingh,
   drPatil,
-  pradeep
-
+  pradeep,
+  xander
 } from "../assets";
 
 export const navLinks = [
@@ -133,16 +124,63 @@ const technologies = [
 
 const experiences = [
   {
-    title: "WebRTC engineer",
-    company_name: "HiringTek",
+    title: "Lead Teaching Assistant",
+    company_name: "Northeastern University",
+    icon: northeastern, // replace with NEU logo if available
+    iconBg: "#E6DEDD",
+    date: "September 2025 - December 2025",
+    points: [
+      "Built coursework using TypeScript, React, Jest, Cypress & Docker; supporting 400+ students with test-driven modules.",
+    ],
+  },
+  {
+    title: "Software Development Engineer",
+    company_name: "Xander Glasses Inc",
+    icon: xander, 
+    iconBg: "DarkBlue",
+    date: "May 2025 - August 2025",
+    points: [
+      "Migrated Dart to Kotlin for GPU utilization; boosted AI processing speeds (+35%) and improved AR rendering.",
+      "Refactored Dart-based testing app, boosting maintainability for 10+ engineers and cutting debugging time by ~30%.",
+      "Built Dart/Flutter app with New Relic, automating customer reports and reducing manual diagnostics by ~40%.",
+      "Automated device provisioning with Bash scripts (40 mins/device); saved Eng. hours, improved software stability.",
+    ],
+  },
+  {
+    title: "Teaching Assistant",
+    company_name: "Northeastern University",
+    icon: northeastern,
+    iconBg: "#E6DEDD",
+    date: "January 2025 - April 2025",
+    points: [
+      "Applied Agile methodologies using Jira to monitor progress, perform grading, and provide feedback for 50+ students.",
+    ],
+  },
+  {
+    title: "Quality Assurance Intern",
+
+    icon: xander, 
+    iconBg: "DarkBlue",
+    date: "September 2024 - December 2024",
+    points: [
+      "Optimized Microsoft’s C-based transcription engine for AR glasses (100+ tests); improved efficiency & stability (+25%).",
+      "Standardized QA pipelines using Docker & Git (60+ modules); reduced test time (-70%), accelerated releases (+30%).",
+      "Designed scalable QA plan (Dart, Kotlin, C; Android, iOS); cut onboarding (-30%), ensured cross-device consistency.",
+      "Refactored core logic & added 500+ unit/integration tests in Kotlin with Robolectric & Jest; resolved 40+ issues, reduced QA bug reports by 45%.",
+    ],
+  },
+  {
+    title: "WebRTC Engineer",
+    company_name: "KansasTek LLC (HiringTek)",
     icon: hiringtek,
     iconBg: "#E6DEDD",
-    date: "February 2022 to April 2023",
+    date: "February 2022 - April 2023",
     points: [
-      "Created a multi-peered prototype using socket.io and peer.js enabling up to 700 Parallel Proctored Interviews.",
-      "Integrated the system with the safe-exam-browser using Javascript to secure the environment during the interview.",
-      "Facilitated online interviews using WebRTC and cut down the time spent during the hiring process by 95%.",
-      "Improved the UI of the website using AngularJS and TypeScript and fixed over 50 frontend related bugs.",
+      "Built multi-peered prototype with Socket.io & Peer.js; enabled 700 parallel proctored interviews with real-time sync.",
+      "Integrated Safe-Exam-Browser using JavaScript; delivered secure, controlled online exam environments.",
+      "Leveraged OpenCV for AI monitoring in live interviews; cut staff workload (-95%) while preserving integrity.",
+      "Improved UI/UX with AngularJS & TypeScript; fixed 50+ frontend bugs, boosting usability & performance.",
+      "Co-authored published chapter in Francis & Taylor, highlighting AI-oriented competency frameworks and AWS S3 backed data solutions for digital talent management.",
     ],
   },
   {
@@ -155,11 +193,10 @@ const experiences = [
       "Developed a dynamic, user-friendly, and responsive front-end using bootstrap-5 for the Company Website.",
       "Built a third normal form database design, using SQL & phpMyAdmin for the website’s product and news pages.",
       "Established an internal email service using Google AppScript and Namecheap email service for firm employees.",
-      "Developed an automated contact reply service using Google AppScript and javascript for the contact us page.",
+      "Developed an automated contact reply service using Google AppScript and JavaScript for the contact us page.",
       "Enhanced the company's online visibility in the surgical equipment market and improved SEO score by over 80%.",
     ],
   },
-  
 ];
 
 const testimonials = [
