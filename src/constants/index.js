@@ -46,6 +46,18 @@ export const navLinks = [
   },
 ];
 
+// Centralized About section copy so content is versionable & testable
+export const aboutContent = {
+  subtitle: "Introduction",
+  heading: "Overview.",
+  paragraphs: [
+    "Full-stack & real-time engineer combining AR device optimization, WebRTC concurrency, and applied computer vision to ship performant, human‑centric interfaces.",
+    "Recent impact: +35% AI processing throughput on smart glasses (GPU-focused Kotlin migration), −70% QA cycle time with standardized multi-platform test strategy (500+ cases), and scalable curriculum tooling supporting 400+ learners in React/Jest/Cypress/Docker.",
+    "I evolve prototypes into resilient systems—leveraging OpenCV → TensorFlow.js transitions, encryption + OTP flows for privacy, and progressive 3D/WebGL experiences with measurable performance baselines.",
+    "Currently pursuing an M.S. in Computer Science @ Northeastern while building products that responsibly extend human capability. Open to roles in platform, real‑time collaboration, applied AI, and graphics-intensive interfaces.",
+  ],
+};
+
 const services = [
   {
     title: "Full stack Web Developer React/Angular",

@@ -3,7 +3,7 @@ import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { services, aboutContent } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -39,16 +39,21 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{aboutContent.subtitle}</p>
+        <h2 className={styles.sectionHeadText}>{aboutContent.heading}</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I am a computer engineer with experience in webRTC, Computer Vision, and full-stack web development. I’ve contributed to projects addressing real-world challenges during internships at international organizations. Currently pursuing a Master of Science in Computer Science at Northeastern University since fall 2023, I aspire to join leading companies driving the technological revolution. My goal is to work on initiatives that significantly improve people’s lives.
-      </motion.p>
+      <div className='mt-4 max-w-3xl space-y-4'>
+        {aboutContent.paragraphs.map((para, i) => (
+          <motion.p
+            key={i}
+            variants={fadeIn("", "", 0.1 + i * 0.05, 1)}
+            className='text-secondary text-[17px] leading-[30px]'
+          >
+            {para}
+          </motion.p>
+        ))}
+      </div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
