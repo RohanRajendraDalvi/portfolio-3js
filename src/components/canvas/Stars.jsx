@@ -25,7 +25,7 @@ class CanvasErrorBoundary extends Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    console.log('Canvas error:', error, errorInfo);
+    console.log('Stars Canvas error:', error, errorInfo);
   }
 
   render() {
@@ -64,18 +64,26 @@ const Stars = (props) => {
 const StarsCanvas = () => {
   const [loaded, setLoaded] = useState(false);
   const [timedOut, setTimedOut] = useState(false);
+  const [hasWebGL, setHasWebGL] = useState(true);
 
   useEffect(() => {
+    // Check WebGL support once on mount
+    setHasWebGL(checkWebGLSupport());
+  }, []);
+
+  useEffect(() => {
+    if (!hasWebGL) return; // Don't set timeout if no WebGL
+
     const timer = setTimeout(() => {
       if (!loaded) {
         setTimedOut(true);
       }
-    }, 5000); // 5 seconds timeout
+    }, 8000); // 8 seconds timeout
 
     return () => clearTimeout(timer);
-  }, [loaded]);
+  }, [loaded, hasWebGL]);
 
-  if (!checkWebGLSupport() || timedOut) {
+  if (!hasWebGL || timedOut) {
     return <div className='w-full h-auto absolute inset-0 z-[-1] bg-primary'></div>;
   }
 

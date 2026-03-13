@@ -32,7 +32,7 @@ class CanvasErrorBoundary extends Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    console.log('Canvas error:', error, errorInfo);
+    console.log('Ball Canvas error:', error, errorInfo);
   }
 
   render() {
@@ -76,18 +76,26 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   const [loaded, setLoaded] = useState(false);
   const [timedOut, setTimedOut] = useState(false);
+  const [hasWebGL, setHasWebGL] = useState(true);
 
   useEffect(() => {
+    // Check WebGL support once on mount
+    setHasWebGL(checkWebGLSupport());
+  }, []);
+
+  useEffect(() => {
+    if (!hasWebGL) return; // Don't set timeout if no WebGL
+
     const timer = setTimeout(() => {
       if (!loaded) {
         setTimedOut(true);
       }
-    }, 5000); // 5 seconds timeout
+    }, 8000); // 8 seconds timeout
 
     return () => clearTimeout(timer);
-  }, [loaded]);
+  }, [loaded, hasWebGL]);
 
-  if (!checkWebGLSupport() || timedOut) {
+  if (!hasWebGL || timedOut) {
     return <div className='w-full h-full bg-primary rounded-full flex items-center justify-center'>
       <img src={icon} alt="tech" className='w-1/2 h-1/2 object-contain' />
     </div>;
