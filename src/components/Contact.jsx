@@ -2,6 +2,10 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -29,20 +33,34 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+      alert(
+        "EmailJS is not configured. Please set VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY in your .env file."
+      );
+      return;
+    }
+
     setLoading(true);
+
+    const timestamp = new Date().toISOString();
 
     emailjs
       .send(
-        'service_uvsh8hx',
-        'template_wysv9bu',
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
-          to_name: "Rohan Dalvi",
-          from_email: form.email,
-          to_email: "dalvi.ro@northeastern.edu",
+          title: "Contact us",
+          name: form.name,
+          email: form.email,
+          time: timestamp,
           message: form.message,
+          // Keep these for backwards compatibility / other templates
+          from_name: form.name,
+          from_email: form.email,
+          submitted_at: timestamp,
         },
-        'wNsNvgzjxP7ZRYKg9'
+        EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -59,7 +77,19 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          const status = error?.status || error?.statusCode || "unknown";
+          const message = error?.text || error?.message || "Unknown error";
+
+          // EmailJS 412 indicates provider/token issues (e.g., Outlook disconnected)
+          if (status === 412) {
+            alert(
+              "Email sending failed (412). Please reconnect your email provider in EmailJS (Outlook/Gmail) or check your API keys."
+            );
+          } else {
+            alert("Ahh, something went wrong. Please try again.");
+          }
+
+          console.log("EmailJSResponseStatus", { status, message });
         }
       );
   };
