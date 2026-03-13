@@ -17,8 +17,35 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Environment files
+.env
+.env.*
+
+# Build output
+dist
+build
+
+# System
+*.log
+
+# Optional npm cache directory
+.npm
+
+# Yarn
+yarn-error.log*
+
+# Vite
+.vite
+
+# Lockfiles (if you use a different package manager locally)
+# npm: keep package-lock.json, but ignore if using yarn/pnpm locally
+# pnpm: keep pnpm-lock.yaml

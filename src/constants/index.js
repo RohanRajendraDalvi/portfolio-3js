@@ -51,28 +51,26 @@ export const aboutContent = {
   subtitle: "Introduction",
   heading: "Overview.",
   paragraphs: [
-    "Full-stack & real-time engineer combining AR device optimization, WebRTC concurrency, and applied computer vision to ship performant, human‑centric interfaces.",
-    "Recent impact: +35% AI processing throughput on smart glasses (GPU-focused Kotlin migration), −70% QA cycle time with standardized multi-platform test strategy (500+ cases), and scalable curriculum tooling supporting 400+ learners in React/Jest/Cypress/Docker.",
-    "I evolve prototypes into resilient systems—leveraging OpenCV → TensorFlow.js transitions, encryption + OTP flows for privacy, and progressive 3D/WebGL experiences with measurable performance baselines.",
-    "Currently pursuing an M.S. in Computer Science @ Northeastern while building products that responsibly extend human capability. Open to roles in platform, real‑time collaboration, applied AI, and graphics-intensive interfaces.",
+    "I just graduated from Northeastern University with an MS in Computer Science and I'm ready to hit the ground running.",
+    "I've built and shipped scalable web platforms, including a WebRTC system handling 700 concurrent users and conversational AI applications with multi-LLM backends. I focus on writing clean, maintainable code that works, scales, and ships.",
   ],
 };
 
 const services = [
   {
-    title: "Full stack Web Developer React/Angular",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
-    title: "Web-RTC engineer Peer.js Socket.io",
+    title: "QA Automation Engineer",
     icon: mobile,
   },
   {
-    title: "Java MVC developer",
+    title: "WebRTC Engineer",
     icon: backend,
   },
   {
-    title: "SQL/noSQL database expert",
+    title: "AI/ML Engineer",
     icon: creator,
   },
 ];
@@ -84,23 +82,43 @@ const technologies = [
     icon: javascript,
   },
   {
+    name: "TypeScript",
+    icon: javascript, // placeholder
+  },
+  {
     name: "Python",
     icon: python,
   },
   {
-    name: "SQL",
-    icon: sql,
+    name: "Swift",
+    icon: javascript, // placeholder
+  },
+  {
+    name: "Kotlin",
+    icon: javascript, // placeholder
+  },
+  {
+    name: "Java",
+    icon: javascript, // placeholder
   },
   {
     name: "C++",
     icon: cplusplus,
   },
   {
-    name: "openCV",
+    name: "Dart",
+    icon: javascript, // placeholder
+  },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "OpenCV",
     icon: opencv,
   },
   {
-    name: "webRTC",
+    name: "WebRTC",
     icon: webRTC,
   },
   {
@@ -108,12 +126,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Google Cloud",
-    icon: googlecloud,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Angular",
+    icon: reactjs, // placeholder
   },
   {
     name: "Node JS",
@@ -128,85 +142,78 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Google Cloud",
+    icon: googlecloud,
+  },
+  {
+    name: "Git",
     icon: git,
   },
-
+  {
+    name: "Docker",
+    icon: javascript, // placeholder
+  },
+  {
+    name: "Firebase",
+    icon: javascript, // placeholder
+  },
 ];
 
 const experiences = [
   {
-    title: "Lead Teaching Assistant",
-    company_name: "Northeastern University",
-    icon: northeastern, // replace with NEU logo if available
-    iconBg: "#E6DEDD",
-    date: "September 2025 - December 2025",
-    points: [
-      "Built coursework using TypeScript, React, Jest, Cypress & Docker; supporting 400+ students with test-driven modules.",
-    ],
-  },
-  {
-    title: "Software Development Engineer",
-    company_name: "Xander Glasses Inc",
-    icon: xander, 
-    iconBg: "DarkBlue",
-    date: "May 2025 - August 2025",
-    points: [
-      "Migrated Dart to Kotlin for GPU utilization; boosted AI processing speeds (+35%) and improved AR rendering.",
-      "Refactored Dart-based testing app, boosting maintainability for 10+ engineers and cutting debugging time by ~30%.",
-      "Built Dart/Flutter app with New Relic, automating customer reports and reducing manual diagnostics by ~40%.",
-      "Automated device provisioning with Bash scripts (40 mins/device); saved Eng. hours, improved software stability.",
-    ],
-  },
-  {
-    title: "Teaching Assistant",
+    title: "Lead Graduate Teaching Assistant",
     company_name: "Northeastern University",
     icon: northeastern,
     iconBg: "#E6DEDD",
-    date: "January 2025 - April 2025",
+    date: "Aug 2024 - Dec 2025",
     points: [
-      "Applied Agile methodologies using Jira to monitor progress, perform grading, and provide feedback for 50+ students.",
+      "Rebuilt course infrastructure with full test coverage and TDD methodology, training 400+ students with test-driven workflows.",
+      "Led a team of three TAs, ran daily syncs, resolved conflicts, and maintained consistent grading to ensure uniform evaluation standards.",
+      "Developed Meet'N'Treat, a full iOS app in Swift/UIKit with Firebase for auth and real-time data, featuring pet profiles, slot-based booking, in-app chat, reviews and ratings, and Stripe payment integration - designed for scalability.",
     ],
   },
   {
-    title: "Quality Assurance Intern",
-
-    icon: xander, 
+    title: "QA Automation Engineer",
+    company_name: "Xander Glasses",
+    icon: xander,
     iconBg: "DarkBlue",
-    date: "September 2024 - December 2024",
+    date: "Sep 2024 - Aug 2025",
     points: [
-      "Optimized Microsoft’s C-based transcription engine for AR glasses (100+ tests); improved efficiency & stability (+25%).",
-      "Standardized QA pipelines using Docker & Git (60+ modules); reduced test time (-70%), accelerated releases (+30%).",
-      "Designed scalable QA plan (Dart, Kotlin, C; Android, iOS); cut onboarding (-30%), ensured cross-device consistency.",
-      "Refactored core logic & added 500+ unit/integration tests in Kotlin with Robolectric & Jest; resolved 40+ issues, reduced QA bug reports by 45%.",
+      "Built and maintained AR assistive applications for hearing-impaired users across iOS and Android, working extensively in Swift (UIKit, XCTest, Xcode) to ship features on both platforms simultaneously.",
+      "Tested a real-time voice-powered assistive tool on wearable AR hardware across 100+ edge cases, uncovering memory leaks, latency spikes, and buffer overflows; fixes improved captioning efficiency by 26% and reduced crash rates.",
+      "Developed Swift based diagnostic and device-management tooling across 30+ modules with structured logging and New Relic observability, reducing average debugging time and automating customer reports that previously consumed 20% of support time.",
+      "Wrote comprehensive automated test suites in Swift (XCTest) following TDD methodology, resolving 46 GitHub issues and establishing reliable CI-gated quality checks across the codebase.",
+      "Performed hands-on mobile device testing, setup, and configuration for 50+ AR devices weekly, using Bash command-line scripts to automate Geekbench hardware validation and catch performance regressions pre-ship.",
+      "Defined and executed the automation testing strategy across the QA team, containerizing 60+ modules in Docker, standardizing Git workflows (Jira-tracked), and cutting release time by 32%",
     ],
   },
   {
-    title: "WebRTC Engineer",
-    company_name: "KansasTek LLC (HiringTek)",
+    title: "Software Engineer",
+    company_name: "HiringTek",
     icon: hiringtek,
     iconBg: "#E6DEDD",
-    date: "February 2022 - April 2023",
+    date: "Feb 2022 - Apr 2023",
     points: [
-      "Built multi-peered prototype with Socket.io & Peer.js; enabled 700 parallel proctored interviews with real-time sync.",
-      "Integrated Safe-Exam-Browser using JavaScript; delivered secure, controlled online exam environments.",
-      "Leveraged OpenCV for AI monitoring in live interviews; cut staff workload (-95%) while preserving integrity.",
-      "Improved UI/UX with AngularJS & TypeScript; fixed 50+ frontend bugs, boosting usability & performance.",
-      "Co-authored published chapter in Francis & Taylor, highlighting AI-oriented competency frameworks and AWS S3 backed data solutions for digital talent management.",
+      "Authored 100+ Swift challenges with automated test suites for the platform's technical assessment modules supporting interviews.",
+      "Integrated Python-based OpenCV gaze monitoring to flag suspicious behavior during live interviews, cutting proctoring effort by 18%.",
+      "Designed and built a WebRTC video interview platform from scratch using star-topology architecture (Socket.io, Peer.js), scaling to 700 concurrent sessions while keeping costs under $0.30 per interview-hour.",
+      "Co-authored a published book chapter (Francis & Taylor) on NLP-driven evaluation pipelines and cloud-scale data processing on AWS.",
     ],
   },
   {
-    title: "Web Developer",
+    title: "Software Engineer",
     company_name: "Vijaydeep Agencies",
     icon: vijaydeep,
     iconBg: "#E6DEDD",
-    date: "December 2021 - May 2022",
+    date: "Dec 2021 - Feb 2022",
     points: [
-      "Developed a dynamic, user-friendly, and responsive front-end using bootstrap-5 for the Company Website.",
-      "Built a third normal form database design, using SQL & phpMyAdmin for the website’s product and news pages.",
-      "Established an internal email service using Google AppScript and Namecheap email service for firm employees.",
-      "Developed an automated contact reply service using Google AppScript and JavaScript for the contact us page.",
-      "Enhanced the company's online visibility in the surgical equipment market and improved SEO score by over 80%.",
+      "Built a responsive website from scratch, cutting page load time by 60% and boosting mobile engagement by 35%.",
+      "Drove an 80% SEO improvement through metadata and sitemap optimization, boosting organic visibility in a competitive B2B market.",
+      "Designed a normalized database in SQLite and Supabase to manage 500+ product SKUs, reducing catalog query time by 70%.",
     ],
   },
 ];
@@ -240,130 +247,130 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Airmouse",
+    name: "Friction Risk Observation Slip Tracking",
     description:
-      "Utilized Python’s OpenCV to develop an initial version, using 3 colored finger tracking for gesture recognition.       Transitioned to TensorFlowJS for the subsequent version,to enhance gesture recognition accuracy and flexibility.      Built a web application using JavaScript providing a friendly UI to the user for defining over 50 hand gestures",
+      "Real-time winter road slip probability using computer vision, spatiotemporal decay, and weather APIs. Built with React Native (Expo), Firebase, and geospatial analysis.",
     tags: [
       {
-        name: "python",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "openCV",
+        name: "Firebase",
         color: "green-text-gradient",
       },
       {
-        name: "HTML,CSS",
+        name: "Computer Vision",
         color: "pink-text-gradient",
       },
     ],
-    image: airmouse,
-    source_code_link: "https://airmouse1-0.onrender.com",
+    image: graph, // placeholder
+    source_code_link: "https://github.com/RohanRajendraDalvi/CMT-winners",
   },
   {
-    name: "Yoga Ai",
+    name: "CineBot",
     description:
-      "Enhanced yoga experience through automated feedback and visual aid on posture improvements for 5 yoga poses.Developed Yoga AI using TensorFlowJS & camera data analysis to accurately classify yoga poses on browsers.",
+      "Built a full-stack conversational search application in Python that uses NLP embedding models, FAISS vector indices, and ChromaDB to power natural-language movie discovery with dual-query scoring, tunable relevance weights, and metadata filtering. Engineered a Flask backend serving multiple semantic search pipelines with switchable embedding models, and integrated Groq API and local Ollama/Gemma LLMs for conversational summarization and follow-up.",
     tags: [
       {
-        name: "tensorFlowJS",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "FAISS",
         color: "green-text-gradient",
       },
       {
-        name: "BootStrap",
+        name: "ChromaDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: graph, // placeholder
+    source_code_link: "https://github.com/Mansi142000/NLP-Project",
+  },
+  {
+    name: "Meet'N'Treat",
+    description:
+      "Built an iOS application using UIKit and Firebase (Auth + backend) that enables secure scheduling of nearby pet interactions, in-home café-style experience, making pet companionship accessible to urban users without the cost or commitment of ownership.",
+    tags: [
+      {
+        name: "Swift",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "UIKit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: yogai, // placeholder
+    source_code_link: "https://github.com/RohanRajendraDalvi/MeetNTreat-New",
+  },
+  {
+    name: "Xander Glasses AR Testing",
+    description:
+      "Reduced AR device test cycles from 1 year → 1.5 months through automation. Built and maintained AR assistive applications for hearing-impaired users across iOS and Android.",
+    tags: [
+      {
+        name: "Kotlin",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "C",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Docker",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: xander, // placeholder
+    source_code_link: "https://www.xanderglasses.com/xanderglasses",
+  },
+  {
+    name: "HiringTek WebRTC Platform",
+    description:
+      "Designed and built a WebRTC video interview platform from scratch using star-topology architecture (Socket.io, Peer.js), scaling to 700 concurrent sessions while keeping costs under $0.30 per interview-hour.",
+    tags: [
+      {
+        name: "Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Socket.io",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: webRTCproject,
+    source_code_link: "https://www.taylorfrancis.com/books/edit/10.1201/9781003440901/ai-oriented-competency-framework-talent-management-digital-economy-alex-khang",
+  },
+  {
+    name: "Yoga AI",
+    description:
+      "Enhanced yoga experience through automated feedback and visual aid on posture improvements for 5 yoga poses. Developed Yoga AI using TensorFlowJS & camera data analysis to accurately classify yoga poses on browsers.",
+    tags: [
+      {
+        name: "TensorFlow.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Bootstrap",
         color: "pink-text-gradient",
       },
     ],
     image: yogai,
     source_code_link: "https://yogai.onrender.com/",
-  },
-  {
-    name: "Super Secure Chat Application",
-    description:
-      "Hosted and Developed a triple Encrypted Chat Application using Sockets.io, PeerJS, JavasScript and Bootstrap. Implemented Mixed Cypher for end to end encryption and  OTP security System for login into chat room.",
-    tags: [
-      {
-        name: "PeerJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ssca,
-    source_code_link: "https://super-safe-chat-app.onrender.com",
-  },
-  {
-    name: "Graphical Image Manipulation and Enhancement App",
-    description:
-      "Built a Java application with GUI in JSwing that performs 18 image processing features for GRIME, including channel visualization, blurring, image compression, flipping, color enhancement, sharpening, color correction etc.  Provided Histogram Visualization and real time rollback facilities improving usability and helping user experience.",
-    tags: [
-      {
-        name: "Java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MVC",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JSwing",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: grime,
-    source_code_link: "https://github.com/RohanRajendraDalvi/GRIME",
-  },
-  {
-    name: "WebRTC prototype",
-    description:
-      "Sure, leveraging technologies such as WebRTC, Peer.js, and Socket.io, I've successfully crafted a robust prototype for webRTC applications. This solution enables seamless real-time communication, facilitating peer-to-peer connections for audio, video, and data sharing. With Peer.js, I've streamlined the process of establishing peer connections, while Socket.io ensures efficient signaling and messaging between peers. This prototype lays a strong foundation for scalable, interactive webRTC applications, empowering users with immersive communication experiences across various platforms and devices.",
-    tags: [
-      {
-        name: "peer.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: webRTCproject,
-    source_code_link: "https://webrtc-prototype.onrender.com/",
-  },
-  {
-    name: "Social media recommendation algorithm",
-    description:
-      "I've created a JavaScript application demonstrating Jaccard similarity and cosine similarity for social media recommendations. Users input their interests, and the app compares them with others' data using these algorithms to provide personalized recommendations, making content more relevant and engaging.",
-    tags: [
-      {
-        name: "Javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "green-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: graph,
-    source_code_link: "https://graph-similarity.onrender.com",
   },
 ];
 
