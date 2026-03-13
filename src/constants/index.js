@@ -31,6 +31,23 @@ import {
   xander
 } from "../assets";
 
+// Import screenshot images
+import cinebot from "../../screenshots/cinebot.jpg";
+import meetandtreat1 from "../../screenshots/meetandtreat.jpg";
+import meetandtreat2 from "../../screenshots/meetandtreat2.jpg";
+import meetandtreat3 from "../../screenshots/meetandtreat3.jpg";
+import meetandtreat4 from "../../screenshots/meetandtreat4.jpg";
+import meetandtreat5 from "../../screenshots/meetandtreat5.jpg";
+import meetandtreat6 from "../../screenshots/meetandtreat6.jpg";
+import meetandtreat7 from "../../screenshots/meetandtreat7.jpg";
+import slipsense1 from "../../screenshots/SlipSense_frost.jpg";
+import slipsense2 from "../../screenshots/SlipSense_frost2.jpg";
+import slipsense3 from "../../screenshots/SlipSense_frost3.jpg";
+import slipsense4 from "../../screenshots/SlipSense_frost4.jpg";
+import slipsense5 from "../../screenshots/SlipSense_frost5.jpg";
+import webrtc1 from "../../screenshots/webrtc1.jpg";
+import webrtc2 from "../../screenshots/webrtc2.jpg";
+
 export const navLinks = [
   {
     id: "about",
@@ -264,7 +281,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: graph, // placeholder
+    images: [slipsense1, slipsense2, slipsense3, slipsense4, slipsense5],
     source_code_link: "https://github.com/RohanRajendraDalvi/CMT-winners",
   },
   {
@@ -285,7 +302,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: graph, // placeholder
+    images: [cinebot],
     source_code_link: "https://github.com/Mansi142000/NLP-Project",
   },
   {
@@ -306,7 +323,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: yogai, // placeholder
+    images: [meetandtreat1, meetandtreat2, meetandtreat3, meetandtreat4, meetandtreat5, meetandtreat6, meetandtreat7],
     source_code_link: "https://github.com/RohanRajendraDalvi/MeetNTreat-New",
   },
   {
@@ -327,7 +344,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: xander, // placeholder
+    images: [xander],
     source_code_link: "https://www.xanderglasses.com/xanderglasses",
   },
   {
@@ -348,7 +365,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: webRTCproject,
+    images: [webrtc1, webrtc2],
     source_code_link: "https://www.taylorfrancis.com/books/edit/10.1201/9781003440901/ai-oriented-competency-framework-talent-management-digital-economy-alex-khang",
   },
   {
@@ -369,7 +386,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: yogai,
+    images: [yogai],
     source_code_link: "https://yogai.onrender.com/",
   },
 ];

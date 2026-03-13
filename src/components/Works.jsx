@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -13,9 +13,23 @@ const ProjectCard = ({
   name,
   description,
   tags,
-  image,
+  images,
   source_code_link,
 }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => 
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) => 
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -28,10 +42,40 @@ const ProjectCard = ({
       >
         <div className='relative w-full h-[230px]'>
           <img
-            src={image}
-            alt='project_image'
+            src={images[currentImageIndex]}
+            alt={`${name} screenshot ${currentImageIndex + 1}`}
             className='w-full h-full object-cover rounded-2xl'
+            loading="lazy"
           />
+
+          {images.length > 1 && (
+            <>
+              <button
+                onClick={prevImage}
+                className='absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75 transition-all'
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+              <button
+                onClick={nextImage}
+                className='absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75 transition-all'
+                aria-label="Next image"
+              >
+                ›
+              </button>
+              <div className='absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1'>
+                {images.map((_, idx) => (
+                  <div
+                    key={idx}
+                    className={`w-2 h-2 rounded-full ${
+                      idx === currentImageIndex ? 'bg-white' : 'bg-white bg-opacity-50'
+                    }`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
