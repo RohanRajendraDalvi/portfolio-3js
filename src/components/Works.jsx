@@ -18,6 +18,7 @@ const ProjectCard = ({
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [imgError, setImgError] = useState(false);
 
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 640px)");
@@ -28,46 +29,54 @@ const ProjectCard = ({
     return () => mq.removeEventListener("change", handler);
   }, []);
 
-  const nextImage = () => {
+  const nextImage = (e) => {
+    e.stopPropagation();
     setCurrentImageIndex((prev) =>
       prev === images.length - 1 ? 0 : prev + 1
     );
   };
 
-  const prevImage = () => {
+  const prevImage = (e) => {
+    e.stopPropagation();
     setCurrentImageIndex((prev) =>
       prev === 0 ? images.length - 1 : prev - 1
     );
   };
 
-  // Card inner content (shared between Tilt and non-Tilt)
   const cardContent = (
     <>
-      <div className="relative w-full h-[230px]">
-        <img
-          src={images[currentImageIndex]}
-          alt={`${name} screenshot ${currentImageIndex + 1}`}
-          className="w-full h-full object-cover rounded-2xl"
-          loading="lazy"
-        />
+      <div className="relative w-full h-[230px] overflow-hidden rounded-2xl bg-black-200">
+        {!imgError ? (
+          <img
+            src={images[currentImageIndex]}
+            alt={`${name} screenshot ${currentImageIndex + 1}`}
+            className="w-full h-full object-cover rounded-2xl"
+            loading="lazy"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-secondary text-sm">
+            Image unavailable
+          </div>
+        )}
 
         {images.length > 1 && (
           <>
             <button
               onClick={prevImage}
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75 transition-all"
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75 transition-all z-10"
               aria-label="Previous image"
             >
               ‹
             </button>
             <button
               onClick={nextImage}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75 transition-all"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-opacity-75 transition-all z-10"
               aria-label="Next image"
             >
               ›
             </button>
-            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
+            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1 z-10">
               {images.map((_, idx) => (
                 <div
                   key={idx}
@@ -114,13 +123,21 @@ const ProjectCard = ({
     </>
   );
 
+  const Wrapper = isMobile ? "div" : motion.div;
+  const wrapperProps = isMobile
+    ? {}
+    : {
+        variants: fadeIn("up", "spring", index * 0.5, 0.75),
+        // Each card observes its OWN viewport entry — doesn't rely on parent
+        initial: "hidden",
+        whileInView: "show",
+        viewport: { once: true, amount: 0.1 },
+      };
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <Wrapper {...wrapperProps}>
       {isMobile ? (
-        // No Tilt on mobile — Tilt breaks touch interactions & can hide cards
-        <div className="bg-tertiary p-5 rounded-2xl w-full">
-          {cardContent}
-        </div>
+        <div className="bg-tertiary p-5 rounded-2xl w-full">{cardContent}</div>
       ) : (
         <Tilt
           options={{ max: 45, scale: 1, speed: 450 }}
@@ -129,14 +146,19 @@ const ProjectCard = ({
           {cardContent}
         </Tilt>
       )}
-    </motion.div>
+    </Wrapper>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+      >
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
@@ -144,6 +166,9 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
@@ -154,7 +179,6 @@ const Works = () => {
         </motion.p>
       </div>
 
-      {/* justify-center keeps cards centered on mobile instead of left-aligned */}
       <div className="mt-20 flex flex-wrap justify-center sm:justify-start gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
