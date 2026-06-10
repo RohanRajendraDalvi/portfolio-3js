@@ -25,11 +25,16 @@ import opencv from "./tech/openCV.png";
 
 
 
-// Removed unused company logos: meta, shopify, starbucks, tesla
+// Company logos
 import hiringtek from "./company/hiringtek.png"
 import vijaydeep from "./company/vijaydeep.png"
 import northeastern from "./company/northeastern.png"
 import xander from "./company/xander.png"
+import meta from "./company/meta.png"
+import shopify from "./company/shopify.png"
+import starbucks from "./company/starbucks.png"
+import tesla from "./company/tesla.png"
+import teksystems from "./company/teksystems.jpg"
 
 import ssca from "./ssca.png";
 import airmouse from "./airmouse.png";
@@ -41,6 +46,8 @@ import webRTCproject from "./webRTC.png"
 import drPatil from "./testimonials/drPatil.jpeg"
 import drSingh from "./testimonials/drSingh.jpeg"
 import pradeep from "./testimonials/pradeep.jpeg"
+import alexParisi from "./testimonials/alexParisi.jpg"
+import alexWestner from "./testimonials/alexWestner.jpg"
 
 export {
   logo,
@@ -65,6 +72,11 @@ export {
   vijaydeep,
   northeastern,
   xander,
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+  teksystems,
 
 
   sql,
@@ -82,5 +94,7 @@ export {
   drPatil,
   drSingh,
   pradeep,
+  alexParisi,
+  alexWestner,
   
 };

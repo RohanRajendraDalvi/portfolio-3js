@@ -28,7 +28,14 @@ import {
   drSingh,
   drPatil,
   pradeep,
-  xander
+  xander,
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+  teksystems,
+  alexParisi,
+  alexWestner
 } from "../assets";
 
 // Import screenshot images
@@ -259,6 +266,22 @@ const testimonials = [
     designation: "Head of Department AI/ML",
     company: "University of Mumbai",
     image: drPatil,
+  },
+  {
+    testimonial:
+      "Alex's contributions to our team have been exceptional. He brings innovation and excellence to every project.",
+    name: "Alex Parisi",
+    designation: "Senior Manager",
+    company: "Tech Innovations",
+    image: alexParisi,
+  },
+  {
+    testimonial:
+      "Working with him was a great experience. His technical skills and problem-solving abilities are outstanding.",
+    name: "Alex Westner",
+    designation: "Project Lead",
+    company: "Creative Solutions",
+    image: alexWestner,
   },
 ];
 
