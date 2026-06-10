@@ -234,22 +234,6 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Rohan is a strong, independent contributor to a small team. His work is thorough, he's a quick study on complex systems, and he cares deeply about his work and helping the team and company succeed.",
-    name: "Alex Westner",
-    designation: "CEO",
-    company: "Xander",
-    image: pradeep, // TODO: replace with Alex Westner's photo
-  },
-  {
-    testimonial:
-      "Very few people at this stage of their career are as driven as Rohan. He has what it takes, and I'm confident he'll have an amazing career — I've worked with dozens of interns and rarely say that.",
-    name: "Alex Parisi",
-    designation: "Senior Software Engineer (formerly Xander)",
-    company: "Bloomberg",
-    image: pradeep, // TODO: replace with Alex Parisi's photo
-  },
-  {
-    testimonial:
       "He has a deep passion for technology, and I can vouch for him as a valuable asset to any organization.",
     name: "Pradeep Haldankar",
     designation: "Director",
@@ -274,18 +258,18 @@ const testimonials = [
   },
   {
     testimonial:
-      "Alex's contributions to our team have been exceptional. He brings innovation and excellence to every project.",
+      "Very few people at this stage of their career are as driven as Rohan. He has what it takes, and I'm confident he'll have an amazing career — I've worked with dozens of interns and rarely say that.",
     name: "Alex Parisi",
-    designation: "Senior Manager",
-    company: "Tech Innovations",
+    designation: "Senior Software Engineer (formerly Xander)",
+    company: "Bloomberg",
     image: alexParisi,
   },
   {
     testimonial:
-      "Working with him was a great experience. His technical skills and problem-solving abilities are outstanding.",
+      "Rohan is a strong, independent contributor to a small team. His work is thorough, he's a quick study on complex systems, and he cares deeply about his work and helping the team and company succeed.",
     name: "Alex Westner",
-    designation: "Project Lead",
-    company: "Creative Solutions",
+    designation: "CEO",
+    company: "Xander",
     image: alexWestner,
   },
 ];
