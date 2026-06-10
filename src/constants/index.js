@@ -180,7 +180,7 @@ const experiences = [
   {
     title: "AI Quality Engineer (via TEKsystems)",
     company_name: "TEKsystems — Client: Apple",
-    icon: creator,
+    icon: teksystems,
     iconBg: "#E6DEDD",
     date: "Apr 2026 - Present",
     points: [
