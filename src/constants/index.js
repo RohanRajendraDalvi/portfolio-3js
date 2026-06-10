@@ -75,38 +75,33 @@ export const aboutContent = {
   subtitle: "Introduction",
   heading: "Overview.",
   paragraphs: [
-    "I just graduated from Northeastern University with an MS in Computer Science and I'm ready to hit the ground running.",
-    "I've built and shipped scalable web platforms, including a WebRTC system handling 700 concurrent users and conversational AI applications with multi-LLM backends. I focus on writing clean, maintainable code that works, scales, and ships.",
+    "I started out building full-stack web products and over the last few years I've pivoted hard into software quality — test automation, SDET work, and AI evaluation.",
+    "I currently work as an AI Quality Engineer (via TEKsystems, client: Apple), focused on automated testing and model quality. I bring a builder's instinct to QA: I've shipped enough production code to test it the way an engineer does — automated, scalable, and CI-gated.",
   ],
 };
 
 const services = [
   {
-    title: "Full-Stack Developer",
-    icon: web,
+    title: "SDET / QA Automation",
+    icon: mobile,
   },
   {
-    title: "QA Automation Engineer",
-    icon: mobile,
+    title: "AI Quality Engineer",
+    icon: creator,
+  },
+  {
+    title: "Full-Stack Developer",
+    icon: web,
   },
   {
     title: "WebRTC Engineer",
     icon: backend,
   },
-  {
-    title: "AI/ML Engineer",
-    icon: creator,
-  },
 ];
 
 const technologies = [
-  
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
+    name: "Swift",
     icon: javascript, // placeholder
   },
   {
@@ -114,24 +109,20 @@ const technologies = [
     icon: python,
   },
   {
-    name: "Swift",
+    name: "TypeScript",
     icon: javascript, // placeholder
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "Kotlin",
     icon: javascript, // placeholder
   },
   {
-    name: "Java",
-    icon: javascript, // placeholder
-  },
-  {
     name: "C++",
     icon: cplusplus,
-  },
-  {
-    name: "Dart",
-    icon: javascript, // placeholder
   },
   {
     name: "SQL",
@@ -148,10 +139,6 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Angular",
-    icon: reactjs, // placeholder
   },
   {
     name: "Node JS",
@@ -188,16 +175,18 @@ const technologies = [
 ];
 
 const experiences = [
+  // Current role — kept intentionally minimal and NDA-safe (no internal product,
+  // tooling, or metric detail). Confirm or remove before publishing.
   {
-    title: "Lead Graduate Teaching Assistant",
-    company_name: "Northeastern University",
-    icon: northeastern,
+    title: "AI Quality Engineer (via TEKsystems)",
+    company_name: "TEKsystems — Client: Apple",
+    icon: creator,
     iconBg: "#E6DEDD",
-    date: "Aug 2024 - Dec 2025",
+    date: "Apr 2026 - Present",
     points: [
-      "Rebuilt course infrastructure with full test coverage and TDD methodology, training 400+ students with test-driven workflows.",
-      "Led a team of three TAs, ran daily syncs, resolved conflicts, and maintained consistent grading to ensure uniform evaluation standards.",
-      "Developed Meet'N'Treat, a full iOS app in Swift/UIKit with Firebase for auth and real-time data, featuring pet profiles, slot-based booking, in-app chat, reviews and ratings, and Stripe payment integration - designed for scalability.",
+      "Work within a cross-functional team on software quality for AI-powered application features, focused on automated testing and model quality.",
+      "Build and contribute to test automation in Python and Swift, and provide human evaluation feedback (RLHF) to improve model response quality.",
+      "Collaborate on multi-agent evaluation pipelines and resolve quality issues as a developer using Xcode and CI workflows.",
     ],
   },
   {
@@ -209,10 +198,10 @@ const experiences = [
     points: [
       "Built and maintained AR assistive applications for hearing-impaired users across iOS and Android, working extensively in Swift (UIKit, XCTest, Xcode) to ship features on both platforms simultaneously.",
       "Tested a real-time voice-powered assistive tool on wearable AR hardware across 100+ edge cases, uncovering memory leaks, latency spikes, and buffer overflows; fixes improved captioning efficiency by 26% and reduced crash rates.",
-      "Developed Swift based diagnostic and device-management tooling across 30+ modules with structured logging and New Relic observability, reducing average debugging time and automating customer reports that previously consumed 20% of support time.",
+      "Developed Swift-based diagnostic and device-management tooling across 30+ modules with structured logging and New Relic observability, reducing average debugging time and automating customer reports that previously consumed 20% of support time.",
       "Wrote comprehensive automated test suites in Swift (XCTest) following TDD methodology, resolving 46 GitHub issues and establishing reliable CI-gated quality checks across the codebase.",
-      "Performed hands-on mobile device testing, setup, and configuration for 50+ AR devices weekly, using Bash command-line scripts to automate Geekbench hardware validation and catch performance regressions pre-ship.",
-      "Defined and executed the automation testing strategy across the QA team, containerizing 60+ modules in Docker, standardizing Git workflows (Jira-tracked), and cutting release time by 32%",
+      "Performed hands-on mobile device testing, setup, and configuration for 50+ AR devices weekly, using Bash scripts to automate Geekbench hardware validation and catch performance regressions pre-ship.",
+      "Defined and executed the automation testing strategy across the QA team, containerizing 60+ modules in Docker, standardizing Jira-tracked Git workflows, and cutting release time by 32%.",
     ],
   },
   {
@@ -225,7 +214,7 @@ const experiences = [
       "Authored 100+ Swift challenges with automated test suites for the platform's technical assessment modules supporting interviews.",
       "Integrated Python-based OpenCV gaze monitoring to flag suspicious behavior during live interviews, cutting proctoring effort by 18%.",
       "Designed and built a WebRTC video interview platform from scratch using star-topology architecture (Socket.io, Peer.js), scaling to 700 concurrent sessions while keeping costs under $0.30 per interview-hour.",
-      "Co-authored a published book chapter (Francis & Taylor) on NLP-driven evaluation pipelines and cloud-scale data processing on AWS.",
+      "Co-authored a published book chapter (Taylor & Francis) on NLP-driven evaluation pipelines and cloud-scale data processing on AWS.",
     ],
   },
   {
@@ -245,6 +234,22 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
+      "Rohan is a strong, independent contributor to a small team. His work is thorough, he's a quick study on complex systems, and he cares deeply about his work and helping the team and company succeed.",
+    name: "Alex Westner",
+    designation: "CEO",
+    company: "Xander",
+    image: pradeep, // TODO: replace with Alex Westner's photo
+  },
+  {
+    testimonial:
+      "Very few people at this stage of their career are as driven as Rohan. He has what it takes, and I'm confident he'll have an amazing career — I've worked with dozens of interns and rarely say that.",
+    name: "Alex Parisi",
+    designation: "Senior Software Engineer (formerly Xander)",
+    company: "Bloomberg",
+    image: pradeep, // TODO: replace with Alex Parisi's photo
+  },
+  {
+    testimonial:
       "He has a deep passion for technology, and I can vouch for him as a valuable asset to any organization.",
     name: "Pradeep Haldankar",
     designation: "Director",
@@ -255,15 +260,15 @@ const testimonials = [
     testimonial:
       "He astonishes me by digging deep into understanding the fundamental ideas.",
     name: "Dr. Vidyadhari Singh",
-    designation: "Head of Department Cyber-Security",
+    designation: "Head of Department, Cyber-Security",
     company: "University of Mumbai",
     image: drSingh,
   },
   {
     testimonial:
-      "Rohan is a quick learner who can quickly comprehend information and keep it for a long time.",
+      "Rohan is a quick learner who can quickly comprehend information and retain it for a long time.",
     name: "Dr. Megharani Patil",
-    designation: "Head of Department AI/ML",
+    designation: "Head of Department, AI/ML",
     company: "University of Mumbai",
     image: drPatil,
   },
@@ -310,7 +315,7 @@ const projects = [
   {
     name: "CineBot",
     description:
-      "Built a full-stack conversational search application in Python that uses NLP embedding models, FAISS vector indices, and ChromaDB to power natural-language movie discovery with dual-query scoring, tunable relevance weights, and metadata filtering. Engineered a Flask backend serving multiple semantic search pipelines with switchable embedding models, and integrated Groq API and local Ollama/Gemma LLMs for conversational summarization and follow-up.",
+      "Full-stack conversational search application in Python using NLP embedding models, FAISS vector indices, and ChromaDB to power natural-language movie discovery with dual-query scoring, tunable relevance weights, and metadata filtering. A Flask backend serves multiple semantic search pipelines with switchable embedding models, integrating Groq API and local Ollama/Gemma LLMs for conversational summarization. (Team project.)",
     tags: [
       {
         name: "Python",
@@ -331,7 +336,7 @@ const projects = [
   {
     name: "Meet'N'Treat",
     description:
-      "Built an iOS application using UIKit and Firebase (Auth + backend) that enables secure scheduling of nearby pet interactions, in-home café-style experience, making pet companionship accessible to urban users without the cost or commitment of ownership.",
+      "iOS application built with Swift/UIKit and Firebase (Auth + backend) that enables secure scheduling of nearby pet interactions and an in-home café-style experience, making pet companionship accessible to urban users without the cost or commitment of ownership.",
     tags: [
       {
         name: "Swift",
@@ -352,7 +357,7 @@ const projects = [
   {
     name: "Xander Glasses AR Testing",
     description:
-      "Reduced AR device test cycles from 1 year → 1.5 months through automation. Built and maintained AR assistive applications for hearing-impaired users across iOS and Android.",
+      "Built and maintained AR assistive applications for hearing-impaired users across iOS and Android, with automation that significantly shortened device test cycles.",
     tags: [
       {
         name: "Kotlin",
@@ -373,7 +378,7 @@ const projects = [
   {
     name: "HiringTek WebRTC Platform",
     description:
-      "Designed and built a WebRTC video interview platform from scratch using star-topology architecture (Socket.io, Peer.js), scaling to 700 concurrent sessions while keeping costs under $0.30 per interview-hour.",
+      "WebRTC video interview platform built from scratch using star-topology architecture (Socket.io, Peer.js), scaling to 700 concurrent sessions while keeping costs under $0.30 per interview-hour.",
     tags: [
       {
         name: "Angular",
@@ -394,7 +399,7 @@ const projects = [
   {
     name: "Yoga AI",
     description:
-      "Enhanced yoga experience through automated feedback and visual aid on posture improvements for 5 yoga poses. Developed Yoga AI using TensorFlowJS & camera data analysis to accurately classify yoga poses on browsers.",
+      "Browser-based yoga pose classifier offering automated feedback and visual aids on posture for 5 yoga poses, built with TensorFlow.js and live camera analysis.",
     tags: [
       {
         name: "TensorFlow.js",
