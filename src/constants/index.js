@@ -48,11 +48,6 @@ import slipsense5 from "../../screenshots/SlipSense_frost5.jpg";
 import webrtc1 from "../../screenshots/webrtc1.jpg";
 import webrtc2 from "../../screenshots/webrtc2.jpg";
 
-// Testimonial author photos — save these images and adjust the filenames/paths as needed.
-// Until the files exist, point them at an existing placeholder so the build doesn't break.
-import alexWestner from "../../screenshots/alex-westner.jpg";
-import alexParisi from "../../screenshots/alex-parisi.jpg";
-
 export const navLinks = [
   {
     id: "about",
@@ -236,7 +231,7 @@ const testimonials = [
     name: "Alex Westner",
     designation: "CEO",
     company: "Xander",
-    image: alexWestner,
+    image: pradeep, // TODO: replace with Alex Westner's photo
   },
   {
     testimonial:
@@ -244,7 +239,7 @@ const testimonials = [
     name: "Alex Parisi",
     designation: "Senior Software Engineer (formerly Xander)",
     company: "Bloomberg",
-    image: alexParisi,
+    image: pradeep, // TODO: replace with Alex Parisi's photo
   },
   {
     testimonial:
