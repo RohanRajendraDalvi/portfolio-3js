@@ -76,7 +76,7 @@ export const aboutContent = {
   heading: "Overview.",
   paragraphs: [
     "I’m a Software Engineer in Test building automation for AI systems, devices, and production-quality user experiences—from AR glasses to Apple’s next-generation Siri workflows.",
-    "My work spans Python test automation, AI evaluation pipelines, device validation, and quality engineering for cross-platform products, with a strong focus on making complex systems observable, reliable, and scalable.",
+    "My work spans Python test automation, AI evaluation pipelines, device validation, and quality engineering, with a strong focus on making systems reliable, and scalable.",
     "I bring a builder’s mindset to QA: I automate the hard parts, instrument the right signals, and ship workflows that reduce triage time, improve release confidence, and catch issues before users do.",
   ],
 };
