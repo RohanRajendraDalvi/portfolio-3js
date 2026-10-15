@@ -75,53 +75,58 @@ export const aboutContent = {
   subtitle: "Introduction",
   heading: "Overview.",
   paragraphs: [
-    "I started out building full-stack web products and over the last few years I've pivoted hard into software quality — test automation, SDET work, and AI evaluation.",
-    "I currently work as an AI Quality Engineer (via TEKsystems, client: Apple), focused on automated testing and model quality. I bring a builder's instinct to QA: I've shipped enough production code to test it the way an engineer does — automated, scalable, and CI-gated.",
+    "I’m a Software Engineer in Test building automation for AI systems, devices, and production-quality user experiences—from AR glasses to Apple’s next-generation Siri workflows.",
+    "My work spans Python test automation, AI evaluation pipelines, device validation, and quality engineering for cross-platform products, with a strong focus on making complex systems observable, reliable, and scalable.",
+    "I bring a builder’s mindset to QA: I automate the hard parts, instrument the right signals, and ship workflows that reduce triage time, improve release confidence, and catch issues before users do.",
   ],
 };
 
 const services = [
   {
-    title: "SDET / QA Automation",
-    icon: mobile,
-  },
-  {
-    title: "AI Quality Engineer",
+    title: "AI Quality Engineering",
     icon: creator,
   },
   {
-    title: "Full-Stack Developer",
-    icon: web,
+    title: "QA Automation",
+    icon: mobile,
   },
   {
-    title: "WebRTC Engineer",
+    title: "Device & Performance Testing",
     icon: backend,
+  },
+  {
+    title: "Full-Stack Prototyping",
+    icon: web,
   },
 ];
 
 const technologies = [
   {
-    name: "Swift",
-    icon: javascript, // placeholder
-  },
-  {
     name: "Python",
     icon: python,
   },
   {
+    name: "Swift",
+    icon: javascript,
+  },
+  {
+    name: "Kotlin",
+    icon: javascript,
+  },
+  {
+    name: "Dart",
+    icon: javascript,
+  },
+  {
     name: "TypeScript",
-    icon: javascript, // placeholder
+    icon: javascript,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "Kotlin",
-    icon: javascript, // placeholder
-  },
-  {
-    name: "C++",
+    name: "C / C++",
     icon: cplusplus,
   },
   {
@@ -129,12 +134,16 @@ const technologies = [
     icon: sql,
   },
   {
+    name: "Bash",
+    icon: javascript,
+  },
+  {
     name: "OpenCV",
     icon: opencv,
   },
   {
-    name: "WebRTC",
-    icon: webRTC,
+    name: "TensorFlow",
+    icon: javascript,
   },
   {
     name: "React JS",
@@ -145,16 +154,12 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "WebRTC",
+    icon: webRTC,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Docker",
+    icon: javascript,
   },
   {
     name: "Google Cloud",
@@ -164,69 +169,61 @@ const technologies = [
     name: "Git",
     icon: git,
   },
-  {
-    name: "Docker",
-    icon: javascript, // placeholder
-  },
-  {
-    name: "Firebase",
-    icon: javascript, // placeholder
-  },
 ];
 
 const experiences = [
-  // Current role — kept intentionally minimal and NDA-safe (no internal product,
-  // tooling, or metric detail). Confirm or remove before publishing.
   {
-    title: "AI Quality Engineer (via TEKsystems)",
-    company_name: "TEKsystems — Client: Apple",
+    title: "AI Quality Engineer (Contractor via TEKsystems)",
+    company_name: "Apple",
     icon: teksystems,
     iconBg: "#E6DEDD",
-    date: "Apr 2026 - Present",
+    date: "Apr 2026 - Oct 2026",
     points: [
-      "Work within a cross-functional team on software quality for AI-powered application features, focused on automated testing and model quality.",
-      "Build and contribute to test automation in Python and Swift, and provide human evaluation feedback (RLHF) to improve model response quality.",
-      "Collaborate on multi-agent evaluation pipelines and resolve quality issues as a developer using Xcode and CI workflows.",
+      "Automated synthetic persona and test data generation in Python, producing 400+ Siri test scenarios per persona from simulated user profiles.",
+      "Replaced manual storyline review with an agentic pipeline that scores coherence across 10+ metrics (temporal, geographic and more), cutting persona creation time by 60%.",
+      "Ran 5+ AI judges on every test run before human review, checking visual evidence and logs and cutting triage time by 80%.",
+      "Filed, reproduced, triaged and verified 50+ Radar bugs per week in Xcode; these reports helped tune Siri's evaluator models.",
+      "Connected filed Radars to an MCP agent pipeline that clustered bugs and routed them to the right teams.",
+      "Tracked release quality: 12% gains every two weeks, adding up to 2x+ improvement per release cycle.",
     ],
   },
   {
-    title: "QA Automation Engineer",
+    title: "Quality Automation Engineer",
     company_name: "Xander Glasses",
     icon: xander,
     iconBg: "DarkBlue",
     date: "Sep 2024 - Aug 2025",
     points: [
-      "Built and maintained AR assistive applications for hearing-impaired users across iOS and Android, working extensively in Swift (UIKit, XCTest, Xcode) to ship features on both platforms simultaneously.",
-      "Tested a real-time voice-powered assistive tool on wearable AR hardware across 100+ edge cases, uncovering memory leaks, latency spikes, and buffer overflows; fixes improved captioning efficiency by 26% and reduced crash rates.",
-      "Developed Swift-based diagnostic and device-management tooling across 30+ modules with structured logging and New Relic observability, reducing average debugging time and automating customer reports that previously consumed 20% of support time.",
-      "Wrote comprehensive automated test suites in Swift (XCTest) following TDD methodology, resolving 46 GitHub issues and establishing reliable CI-gated quality checks across the codebase.",
-      "Performed hands-on mobile device testing, setup, and configuration for 50+ AR devices weekly, using Bash scripts to automate Geekbench hardware validation and catch performance regressions pre-ship.",
-      "Defined and executed the automation testing strategy across the QA team, containerizing 60+ modules in Docker, standardizing Jira-tracked Git workflows, and cutting release time by 32%.",
+      "Wrote Robolectric/JUnit tests for Bluetooth Low Energy (BLE) pairing, connections, app updates and Wi‑Fi to Azure cloud.",
+      "Built custom Flutter audio test apps measuring Word Error Rate (WER) across background noise levels and microphone setups, along with audio buffer and latency.",
+      "Ran on-device performance tests with the glasses firmware (isolating background processes), logging thermal, battery, CPU and memory via ADB; optimized the Microsoft speech-to-text engine, improving thermal stability by 25%.",
+      "Wrote fault-tolerant Bash scripts to provision multiple devices at once, saving 40 minutes per device.",
+      "Designed a scalable device QA plan (Dart, Kotlin, C; Android, iOS) for cross-device consistency, cutting onboarding by 30%.",
+      "Built 500+ unit, integration and regression tests across the app codebase, reducing QA bug reports by 45%.",
+      "Built New Relic dashboards and automated bug diagnostics, cutting critical failures by 40%.",
+      "Refactored core Kotlin logic, resolving 40+ critical issues; also helped migrate Dart code to Kotlin for faster on-device AI.",
     ],
   },
   {
-    title: "Software Engineer",
-    company_name: "HiringTek",
+    title: "Lead Teaching Assistant",
+    company_name: "Northeastern University",
+    icon: northeastern,
+    iconBg: "#E6DEDD",
+    date: "Aug 2025 - Apr 2026",
+    points: [
+      "Designed test-driven coursework (TypeScript, React, Jest, Cypress, Docker); mentored 400+ students via code reviews.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    company_name: "KansasTek",
     icon: hiringtek,
     iconBg: "#E6DEDD",
     date: "Feb 2022 - Apr 2023",
     points: [
-      "Authored 100+ Swift challenges with automated test suites for the platform's technical assessment modules supporting interviews.",
-      "Integrated Python-based OpenCV gaze monitoring to flag suspicious behavior during live interviews, cutting proctoring effort by 18%.",
-      "Designed and built a WebRTC video interview platform from scratch using star-topology architecture (Socket.io, Peer.js), scaling to 700 concurrent sessions while keeping costs under $0.30 per interview-hour.",
-      "Co-authored a published book chapter (Taylor & Francis) on NLP-driven evaluation pipelines and cloud-scale data processing on AWS.",
-    ],
-  },
-  {
-    title: "Software Engineer",
-    company_name: "Vijaydeep Agencies",
-    icon: vijaydeep,
-    iconBg: "#E6DEDD",
-    date: "Dec 2021 - Feb 2022",
-    points: [
-      "Built a responsive website from scratch, cutting page load time by 60% and boosting mobile engagement by 35%.",
-      "Drove an 80% SEO improvement through metadata and sitemap optimization, boosting organic visibility in a competitive B2B market.",
-      "Designed a normalized database in SQLite and Supabase to manage 500+ product SKUs, reducing catalog query time by 70%.",
+      "Applied OpenCV computer vision to monitor live proctored interviews in real time, reducing staff effort by 50% in early screening rounds while preserving interview integrity.",
+      "Built a real-time multi-peer video prototype with Socket.io and Peer.js, supporting 700 parallel proctored interviews.",
+      "Co-authored a published chapter (Taylor & Francis) on AI-oriented competency frameworks and AWS S3-backed data solutions for digital talent management.",
     ],
   },
 ];
